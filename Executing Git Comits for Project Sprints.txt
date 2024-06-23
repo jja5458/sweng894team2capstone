@@ -1,0 +1,13 @@
+Before you start 
+- Make sure you're in the right directory project folder
+
+Uploading sprint Progress to github
+1. Start Project (npm start)
+2. git checkout -b sprintone   
+3. git push -u origin sprintone  
+4. git config --global user.email "jja5458@psu.edu" 
+5. git push origin sprintone             
+6. git checkout -b sprintonev2  
+7. git add .  
+8. git commit -m "added login, added secondary upload bucket, pdf to text conversion"
+9. git push origin sprintv2

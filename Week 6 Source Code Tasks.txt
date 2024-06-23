@@ -1,0 +1,16 @@
+Week 6 Tasks
+
+- Finish Sprint 1 Software Testing/Source Code Development
+	Not Tested 
+		- Tests account creation functionality.
+		- Verifies functionality for deleting accounts.  
+		- Tests redirection to login page for unauthorized access.  
+
+- Sprint 2 goals:   	
+
+	Not Doing (Sprint 2- Possibly break these down into smaller tests)
+	- Checks system capability for handling multiple uploads. 
+	- Verifies password reset process. 
+	- Verifies multi-factor authentication process.
+
+	
