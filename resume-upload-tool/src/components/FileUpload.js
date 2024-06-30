@@ -25,7 +25,7 @@ const FileUpload = () => {
             if (!response.ok) {
                 throw new Error('Failed to upload file.');
             }
-            const result = await response.text();
+            const result = await response.blob();
             alert('File uploaded successfully: ' + result);
         } catch (error) {
             console.error('Upload error:', error);
