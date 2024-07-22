@@ -1,0 +1,18 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+#dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+#jobDescription, #candidate, #metrics {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#metrics div {
+    margin-top: 10px;
+}

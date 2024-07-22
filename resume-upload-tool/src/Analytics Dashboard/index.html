@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dashboard">
+        <div id="jobDescription">
+            <h2>Job Description: Software Engineer</h2>
+            <ul>
+                <li>Required Skills: Python, JavaScript, SQL</li>
+                <li>Years of Experience: Minimum 5 years</li>
+                <li>Educational Qualifications: Bachelor's degree in Computer Science or related field</li>
+            </ul>
+        </div>
+        <div id="candidate">
+            <h2>Candidate: John Doe</h2>
+            <button onclick="viewResume()">View Resume</button>
+        </div>
+        <div id="metrics">
+            <h2>Metrics</h2>
+            <div id="skillsMatch">Skills Match: <span id="skillsScore">0</span>%</div>
+            <div id="experience">Experience: <span id="experienceScore">0</span>%</div>
+            <div id="education">Education: <span id="educationScore">0</span>%</div>
+            <div id="overall">Overall: <span id="overallScore">0</span>%</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
