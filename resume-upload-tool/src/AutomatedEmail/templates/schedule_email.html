@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule Email</title>
+</head>
+<body>
+    <h1>Schedule Email</h1>
+    <form action="{{ url_for('schedule') }}" method="post">
+        <label for="recipient">Recipient:</label>
+        <input type="email" name="recipient" id="recipient" required>
+        <br>
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required>
+        <br>
+        <label for="body">Body:</label>
+        <textarea name="body" id="body" required></textarea>
+        <br>
+        <label for="send_time">Send Time (YYYY-MM-DD HH:MM:SS):</label>
+        <input type="text" name="send_time" id="send_time" required>
+        <br>
+        <button type="submit">Schedule Email</button>
+    </form>
+    <h2>Scheduled Emails</h2>
+    <ul>
+        {% for email in emails %}
+        <li>{{ email.recipient }} - {{ email.subject }} - {{ email.send_time }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
