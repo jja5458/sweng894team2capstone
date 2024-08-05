@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Notification System</title>
+</head>
+<body>
+  <h1>HR Notification System</h1>
+  <div id="notification"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('notification', (message) => {
+      const notificationDiv = document.getElementById('notification');
+      const notification = document.createElement('p');
+      notification.textContent = message;
+      notificationDiv.appendChild(notification);
+    });
+  </script>
+</body>
+</html>
